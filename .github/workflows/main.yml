@@ -16,7 +16,7 @@ jobs:
       # Checks out repository so our job can access it
       - uses: actions/checkout@v2
       - name: Power Shell Copy     
-        run: powershell Copy-Item -Path C:\actions-runner\_work\DeployToWindowsVMTest\DeployToWindowsVMTest\* -Destination C:\inetpub\wwwroot 
+        run: powershell Copy-Item -Path C:\actions-runner\_work\DeployToWindowsVMTest\DeployToWindowsVMTest\* -Destination C:\inetpub\wwwroot -force
         
 
         
