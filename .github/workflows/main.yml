@@ -19,7 +19,9 @@ jobs:
 
         
       - name: Copy Attempt Using Command Line
-        run: cmd xcopy C:\actions-runner\_work\DeployToWindowsVMTest\DeployToWindowsVMTest C:\inetpub\wwwroot /E
+        run: xcopy C:\actions-runner\_work\DeployToWindowsVMTest\DeployToWindowsVMTest C:\inetpub\wwwroot /E /D /E:ON /V:OFF /S /C "CALL "{0}""
+        
+
         
 
 
