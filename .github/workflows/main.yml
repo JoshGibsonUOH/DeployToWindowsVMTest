@@ -17,7 +17,7 @@ jobs:
       - uses: actions/checkout@v2
     
       - name: Display the path       
-        run: powershell Copy-Item -Path C:\actions-runner\_work\DeployToWindowsVMTest\DeployToWindowsVMTest* -Destination C:\inetpub\wwwroot
+        run: powershell Copy-Item -Path C:\actions-runner\_work\DeployToWindowsVMTest\DeployToWindowsVMTest* -Destination C:\inetpub\wwwroot -recurse
         
 
 
