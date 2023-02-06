@@ -15,6 +15,11 @@ jobs:
     steps:
       # Checks out repository so our job can access it
       - uses: actions/checkout@v2
-         working-directory:C:\inetpub\wwwroot
+    
+      - name: Display the path       
+        run: powershell -ipconfig ". '{0}'"
+
+
+
       
 
