@@ -17,7 +17,7 @@ jobs:
       - uses: actions/checkout@v2
     
       - name: Display the path       
-        run: powershell -cd documents ". '{0}'"
+        run: powershell cd documents ". '{0}'"
         
 
 
